@@ -1,0 +1,36 @@
+[user]
+	email = mnavickas14@gmail.com
+	name = Michael Navickas
+[alias]
+	alias = config --get-regexp ^alias\\.
+	br = branch
+	ci = commit
+	co = checkout
+	cp = cherry-pick
+	dc = diff --cached
+	dt = difftool
+	head = log --oneline -10 --decorate --graph
+	hist = log --pretty=format:\"%h %cd %s [%an]%d\" --graph --date=short --decorate
+	mt = mergetool --no-prompt
+	st = status
+	stb = status -sb
+	sub = submodule
+	sup = submodule update --init --recursive
+	subfor = submodule foreach --recursive
+	describeBrief = describe --always --match=production*
+[submodule]
+	summary = false
+[status]
+	#submodulesummary = true
+[core]
+	autocrlf = true
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
+	longpaths = true
+	safecrlf = true
+	whitespace = cr-at-eol,tab-in-indent,tabwidth=4,-blank-at-eof
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+[color "branch"]
+	upstream = cyan
